@@ -1,283 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
-    <link rel="icon"  href="assets/N.svg">
+    <link rel="icon" href="assets/N.svg">
     <style>
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: Helvetica,'Segoe UI', sans-serif ;
-        box-sizing: border-box;
-    }
-    body{
-        background-color:rgb(0, 0, 0);
-        color: white;
-    }
-        .logo{
-            width: 190px;
-           
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, 'Segoe UI', sans-serif;
+            box-sizing: border-box;
         }
-        nav{
+
+        body {
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        .logo {
+            width: 190px;
+
+        }
+
+        nav {
             display: flex;
             gap: 730px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
         }
 
 
-        header{
+        header {
             background-image: url(assets/bg.jpg);
             width: 100%;
             height: 130vh;
-    background-position: center;
-    /* box-shadow: inset 0 -5px 5px rgba(0, 0, 0, 0.5); */
+            background-position: center;
+            /* box-shadow: inset 0 -5px 5px rgba(0, 0, 0, 0.5); */
         }
-        .lang{
+
+        .lang {
             height: 32px;
-    width: 126px;
-    border-radius: 5px;
-    font-size: 16px;
-    padding-left: 13px;
-    background-color: black;
-    color: white;
-    opacity: 0.6;
-    position: absolute;
-    right: 230px;
-    
+            width: 126px;
+            border-radius: 5px;
+            font-size: 16px;
+            padding-left: 13px;
+            background-color: black;
+            color: white;
+            opacity: 0.6;
+            position: absolute;
+            right: 230px;
+
         }
-        .btn1{
+
+        .btn1 {
             width: 75px;
-    height: 32px;
-    background-color:red;
-    border-radius: 5px;
-    opacity: 0.85;
+            height: 32px;
+            background-color: red;
+            border-radius: 5px;
+            opacity: 0.85;
         }
-.sign{
-    text-decoration: none;
-    color: white;
-    font-size: 13px;
-    font-weight: 700;
-}
-   .hero{
-    position: absolute;
-    background-color: black;
-    opacity: 0.6;
-    top: 0;
-    width: 100vw;
-    height: 130vw;
 
-   }
-   .hero-content{
-    position: relative;
-    top: 276px;
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    gap: 20px;
-   }
-   .hero-h1{
-    font-size: 41px;
-    font-weight: 800;
-   }
-   .hero-h3{
-    font-weight: 200;
-    font-size: 22px;
-   }
-   #email{
-    width: 369px;
-    height: 56px;
-    padding-left: 50px;
-    font-size: 18px;
+        .sign {
+            text-decoration: none;
+            color: white;
+            font-size: 13px;
+            font-weight: 700;
+        }
 
-   }
-   .container{
-    display: flex;
-    align-items: center;
-    margin: auto;
-    gap: 10px;
-   }
-   
-   .btn2{
-    width: 200px;
-    height: 56px;
-    background-color: red;
-    color: white;
-    font-size: 25px;
-    font-weight: 700;
-   }
-   .features{
-    /* background-color: black; */
-    width: 100vw;
+        .hero {
+            position: absolute;
+            background-color: black;
+            opacity: 0.6;
+            top: 0;
+            width: 100vw;
+            height: 130vw;
+
+        }
+
+        .hero-content {
+            position: relative;
+            top: 276px;
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            gap: 20px;
+        }
+
+        .hero-h1 {
+            font-size: 41px;
+            font-weight: 800;
+        }
+
+        .hero-h3 {
+            font-weight: 200;
+            font-size: 22px;
+        }
+
+        #email {
+            width: 369px;
+            height: 56px;
+            padding-left: 50px;
+            font-size: 18px;
+
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            margin: auto;
+            gap: 10px;
+        }
+
+        .btn2 {
+            width: 200px;
+            height: 56px;
+            background-color: red;
+            color: white;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .features {
+            width: 100vw;
     height: 490px;
     display: flex;
-   }
-   #tv{
-    width: 424px;
-   }
-   /* .feature-1-text{
-
-   }
-   .feature-1-img{
-   
-   } */
-   .outline{
-
-    height: 8px;
-    background-color:rgb(45,45,45);
-   }
-   .questions{
- 
-    height: 700px;
-    
-   }
-   .quest{
-    width: 1176px;
-    height: 84px;
-    background-color: rgb(45, 45, 45);
-    color: white;
-    display: flex;
-    gap: 941px;
-    justify-content: space-evenly;
-    align-items: center;
-   }
-   #questions{
-    position: relative;
-    /* top: 98px; */
-    left: 31px;
-   }
-   .heading{
+    margin: auto;
     text-align: center;
-    margin: 40px;
-   }
-   .footer{
-    color:rgba(255,255,255,0.7);
-    height: 500px;
-   }
-   .items{
     justify-content: center;
-    /* width: 100%; */
-    height: 211px;
-    display: grid;
-    grid-template-columns: 223px 235px 217px 100px;
-    list-style: none;
-    row-gap: 0px;
-    align-content: space-evenly;
-   }
-a{
-    color:rgba(255,255,255,0.7);
-   }
+        }
 
+        #tv {
+            width: 424px;
+        }
 
+        .feature-2-text,.ft{
+            margin: 160px 8px;
+    width: 580px;
+    height: 160px;
+    text-align: left;
+
+   }
+   .feature-2-img,.fm{
+    margin: 64px 38px;
+    
+   
+   } 
+   h2{
+    font-weight: 900;
+    font-size: 48px;
+   }
+   .f{
+    font-size: 24px;
+   }
+        .outline {
+
+            height: 8px;
+            background-color: rgb(45, 45, 45);
+        }
+
+        .questions {
+
+            height: 700px;
+
+        }
+
+        .quest {
+            width: 1176px;
+            height: 84px;
+            background-color: rgb(45, 45, 45);
+            color: white;
+            display: flex;
+            gap: 941px;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #questions {
+            position: relative;
+            /* top: 98px; */
+            left: 31px;
+        }
+
+        .heading {
+            text-align: center;
+            margin: 40px;
+        }
+
+        .footer {
+            color: rgba(255, 255, 255, 0.7);
+            height: 500px;
+        }
+
+        .items {
+            justify-content: center;
+            /* width: 100%; */
+            height: 211px;
+            display: grid;
+            grid-template-columns: 223px 235px 217px 100px;
+            list-style: none;
+            row-gap: 0px;
+            align-content: space-evenly;
+        }
+
+        a {
+            color: rgba(255, 255, 255, 0.7);
+        }
     </style>
 </head>
-<body>
-   <!-- Header section start-->
-    <header>
-            <nav>
-                <div class="logo"><img src="assets/logo2.svg" alt=""></div>
-                    <select class="lang">
-                        <option label="English" value="en"><span><img src="assets/lang.svg" alt=""></span></option>
-                        <option label="हिन्दी" value="hi"></option>
-                    </select>
-                    <button class="btn btn1"><a href="#" target="_blank" class="sign">Sign In</a></button>
-            </nav>
-        </header>
-         <!-- Header section end-->
 
-        <!-- Hero section start-->
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="hero-h1">Unlimited movies, TV shows and more</h1>
-                <h3 class="hero-h3">Watch anywhere. Cancel anytime.</h3>
+<body>
+    <!-- Header section start-->
+    <header>
+        <nav>
+            <div class="logo"><img src="assets/logo2.svg" alt=""></div>
+            <select class="lang">
+                <option label="English" value="en"><span><img src="assets/lang.svg" alt=""></span></option>
+                <option label="हिन्दी" value="hi"></option>
+            </select>
+            <button class="btn btn1"><a href="#" target="_blank" class="sign">Sign In</a></button>
+        </nav>
+    </header>
+    <!-- Header section end-->
+
+    <!-- Hero section start-->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-h1">Unlimited movies, TV shows and more</h1>
+            <h3 class="hero-h3">Watch anywhere. Cancel anytime.</h3>
             <p>Ready to watch? Enter your email to create or restart your</p>
-          
-           <div class="container">
-            
-            <input type="email" name="" id="email" placeholder="enter email" class="email">
-         
-            <button class="btn btn2">Get Started <span><img src="assets/arrowr.svg" alt=""></span></button>
-           </div>
+
+            <div class="container">
+
+                <input type="email" name="" id="email" placeholder="enter email" class="email">
+
+                <button class="btn btn2">Get Started <span><img src="assets/arrowr.svg" alt=""></span></button>
             </div>
-        </section>
-        <!-- Hero section end-->
-        <div class="outline">
         </div>
-        <!-- Features section 1 start-->
-         <section class="features sec1">
-            <div class="feature-1-text">
-<h1>
-    Enjoy on your TV
-</h1>
-<p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
-            </div>
-            <div class="feature-1-img">
-                <img src="assets/tv.png" alt="" id="tv">
-            </div>
-         </section>
-         <!-- Features section 1 end-->
-         <div class="outline">
+    </section>
+
+
+    <!-- Hero section end-->
+    <div class="outline">
+    </div>
+    <!-- Features section 1 start-->
+    <section class="features sec1">
+        <div class="feature-1-text ft">
+            <h2>
+                Enjoy on your TV
+            </h2>
+            <p class="f">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
         </div>
-         <!-- Features section 2 start-->
-         <section class="features sec2">
-            <div class="feature-2-img">
-                <img src="assets/mobile-0819.jpg" alt="" id="tv">
-            </div>
-            <div class="feature-2-text">
-                <h1>
-                    Download your shows to watch offline
-                </h1>
-                <p>Save your favourites easily and always have something to watch.</p>
-            </div>
-         </section>
-         <!-- Features section 2 end-->
-         <div class="outline">
+        <div class="feature-1-img fm">
+            <img src="assets/tv.png" alt="" id="tv">
         </div>
-          <!-- Features section 3 start-->
-          <section class="features sec3">
-            <div class="feature-3-text">
-                <h1>
-                    Watch everywhere
-                </h1>
-                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
-            </div>
-            <div class="feature-3-img">
-                <img src="assets/device-pile-in.png" alt="" id="tv">
-            </div>
-            
-         </section>
-         <!-- Features section 3 end-->
-         <div class="outline">
+    </section>
+    <!-- Features section 1 end-->
+    <div class="outline">
+    </div>
+    <!-- Features section 2 start-->
+    <section class="features sec2">
+        <div class="feature-2-img fm">
+            <img src="assets/mobile-0819.jpg" alt="" id="tv">
         </div>
-        <!-- Features section 4 start-->
-        <section class="features sec4">
-            <div class="feature-4-img">
-                <img src="assets/children.png" alt="" id="tv">
-            </div>
-            <div class="feature-4-text">
-                <h1>
-                    Create profiles for kids
-                </h1>
-                <p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
-            </div>
-           
-            
-         </section>
-         <!-- Features section 4 end-->
-         <div class="outline">
+        <div class="feature-2-text ft">
+            <h2 class="f-2-h1">
+                Download your shows to watch offline
+            </h2>
+            <p class="f">Save your favourites easily and always have something to watch.</p>
         </div>
-        <!-- questions -->
-        <section class="questions">
-            <h1 class="heading">
-                Frequently Asked Questions
-            </h1>
-            <div id="questons">
-              <ul>
+    </section>
+    <!-- Features section 2 end-->
+    <div class="outline">
+    </div>
+    <!-- Features section 3 start-->
+    <section class="features sec3">
+        <div class="feature-3-text ft">
+            <h2>
+                Watch everywhere
+            </h2>
+            <p class="f">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        </div>
+        <div class="feature-3-img fm">
+            <img src="assets/device-pile-in.png" alt="" id="tv">
+        </div>
+
+    </section>
+    <!-- Features section 3 end-->
+    <div class="outline">
+    </div>
+    <!-- Features section 4 start-->
+    <section class="features sec4">
+        <div class="feature-4-img fm">
+            <img src="assets/children.png" alt="" id="tv">
+        </div>
+        <div class="feature-4-text ft">
+            <h2>
+                Create profiles for kids
+            </h2>
+            <p class="f">Send children on adventures with their favourite characters in a space made just for them—free with your
+                membership.</p>
+        </div>
+
+
+    </section>
+    <!-- Features section 4 end-->
+    <div class="outline">
+    </div>
+    <!-- questions -->
+    <section class="questions">
+        <h1 class="heading">
+            Frequently Asked Questions
+        </h1>
+        <div id="questons">
+            <ul>
                 <li>
                     <button class="quest">
                         <span>What is Netflix?</span>
@@ -314,46 +354,49 @@ a{
                         <img src="assets/plus.svg" alt="" id="plus">
                     </button>
                 </li>
-              </ul>
-            </div>
+            </ul>
+        </div>
 
 
         <div>
             <p>Ready to watch? Enter your email to create or restart your</p>
-          
-            <div class="email">
-                <input type="email" name="" id="email" placeholder="enter email" >
-            </div>
-            <button class="btn btn2">Get Started <span><img src="assets/arrowr.svg" alt=""></span></button>
-        </section>
-        <div class="outline">
-        </div>
-        <!-- footer start-->
-         
-         <footer>
-            <div class="footer">
-                <div>Questions? Call <a href="#">000-800-919-1694</a></div>
-                <ul class="items">
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Investor Relations</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Speed Test</a></li>
-                    <li><a href="#">Help Centrre</a></li>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Cookie Preference</a></li>
-                    <li><a href="#">Legal Notices</a></li>
-                    <li><a href="#">Account</a></li>
-                    <li><a href="#">Ways to watch</a></li>
-                    <li><a href="#">Corporate information</a></li>
-                    <li><a href="#">Only on Netflix</a></li>
-                    <li><a href="#">Media Centre</a></li>
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
 
-         </footer>
-           <!-- footer end-->
-    </body>
+            <div class="container">
+
+                <input type="email" name="" id="email" placeholder="enter email" class="email">
+
+                <button class="btn btn2">Get Started <span><img src="assets/arrowr.svg" alt=""></span></button>
+            </div>
+    </section>
+    <div class="outline">
+    </div>
+    <!-- footer start-->
+
+    <footer>
+        <div class="footer">
+            <div>Questions? Call <a href="#">000-800-919-1694</a></div>
+            <ul class="items">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Speed Test</a></li>
+                <li><a href="#">Help Centrre</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Cookie Preference</a></li>
+                <li><a href="#">Legal Notices</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Ways to watch</a></li>
+                <li><a href="#">Corporate information</a></li>
+                <li><a href="#">Only on Netflix</a></li>
+                <li><a href="#">Media Centre</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <!-- footer end-->
 </body>
+</body>
+
 </html>
