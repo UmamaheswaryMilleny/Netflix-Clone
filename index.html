@@ -18,12 +18,14 @@
             background-color: rgb(0, 0, 0);
             color: white;
         }
-
-        .logo {
-            width: 190px;
-
+        /* Header section start */
+        header {
+            background-image: url(assets/bg.jpg);
+            width: 100%;
+            height: 130vh;
+            background-position: center;
+            /* box-shadow: inset 0 -5px 5px rgba(0, 0, 0, 0.5); */
         }
-
         nav {
             display: flex;
             gap: 730px;
@@ -35,13 +37,14 @@
         }
 
 
-        header {
-            background-image: url(assets/bg.jpg);
-            width: 100%;
-            height: 130vh;
-            background-position: center;
-            /* box-shadow: inset 0 -5px 5px rgba(0, 0, 0, 0.5); */
+        .logo {
+            width: 190px;
+
         }
+
+     
+
+   
 
         .lang {
             height: 32px;
@@ -71,6 +74,9 @@
             font-size: 13px;
             font-weight: 700;
         }
+         /* Header section end */
+
+         /* Hero section start */
 
         .hero {
             position: absolute;
@@ -92,13 +98,16 @@
         }
 
         .hero-h1 {
-            font-size: 41px;
+            font-size: 42px;
             font-weight: 800;
         }
 
         .hero-h3 {
             font-weight: 200;
-            font-size: 22px;
+            font-size: 24px;
+        }
+        .hero-p{
+            font-size: 21px;
         }
 
         #email {
@@ -106,10 +115,11 @@
             height: 56px;
             padding-left: 50px;
             font-size: 18px;
+            border-radius: 5px;
 
         }
 
-        .container {
+        .container-hero {
             display: flex;
             align-items: center;
             margin: auto;
@@ -123,7 +133,18 @@
             color: white;
             font-size: 25px;
             font-weight: 700;
+            border-radius: 5px;
         }
+        /* Hero section end */
+
+        .outline {
+
+height: 8px;
+background-color: rgb(45, 45, 45);
+}
+
+
+        /* Features section start */
 
         .features {
             width: 100vw;
@@ -133,19 +154,44 @@
     text-align: center;
     justify-content: center;
         }
+     
 
-        #tv {
-            width: 424px;
+        #f1-img {
+            width: 548px;
+    height: 400px;
+    padding: 10px;
         }
+        #f2-img {
+            width: 448px;
+    /* height: 400px; */
+    padding: 10px;
+        }
+        #f3-img{
+            width: 448px;
+    /* height: 400px; */
+    padding: 10px;
 
-        .feature-2-text,.ft{
-            margin: 160px 8px;
+        }
+        #f4-img{
+            width: 448px;
+    /* height: 400px; */
+    padding: 10px;
+
+        }
+       
+
+        .feature-text{
+            margin: 160px 45px;
     width: 580px;
     height: 160px;
     text-align: left;
 
    }
-   .feature-2-img,.fm{
+   .ft1{
+            margin: 160px 45px;
+
+        }
+   .feature-img{
     margin: 64px 38px;
     
    
@@ -191,6 +237,8 @@
             margin: 40px;
         }
 
+        /* footer start */
+
         .footer {
             color: rgba(255, 255, 255, 0.7);
             height: 500px;
@@ -210,6 +258,7 @@
         a {
             color: rgba(255, 255, 255, 0.7);
         }
+        /* footer end */
     </style>
 </head>
 
@@ -232,11 +281,11 @@
         <div class="hero-content">
             <h1 class="hero-h1">Unlimited movies, TV shows and more</h1>
             <h3 class="hero-h3">Watch anywhere. Cancel anytime.</h3>
-            <p>Ready to watch? Enter your email to create or restart your</p>
+            <p class="hero-p">Ready to watch? Enter your email to create or restart your membership</p>
 
-            <div class="container">
+            <div class="container-hero">
 
-                <input type="email" name="" id="email" placeholder="enter email" class="email">
+                <input type="email" name="" id="email" placeholder="enter email">
 
                 <button class="btn btn2">Get Started <span><img src="assets/arrowr.svg" alt=""></span></button>
             </div>
@@ -249,14 +298,14 @@
     </div>
     <!-- Features section 1 start-->
     <section class="features sec1">
-        <div class="feature-1-text ft">
+        <div class="feature-text ft1">
             <h2>
                 Enjoy on your TV
             </h2>
             <p class="f">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
         </div>
-        <div class="feature-1-img fm">
-            <img src="assets/tv.png" alt="" id="tv">
+        <div class="feature-img fm1">
+            <img src="assets/tv.png" alt="" id="f1-img" class="fimg">
         </div>
     </section>
     <!-- Features section 1 end-->
@@ -264,11 +313,11 @@
     </div>
     <!-- Features section 2 start-->
     <section class="features sec2">
-        <div class="feature-2-img fm">
-            <img src="assets/mobile-0819.jpg" alt="" id="tv">
+        <div class="feature-img fm2">
+            <img src="assets/mobile-0819.jpg" alt="" id="f2-img" class="fimg">
         </div>
-        <div class="feature-2-text ft">
-            <h2 class="f-2-h1">
+        <div class="feature-text ft2">
+            <h2 id="fh2">
                 Download your shows to watch offline
             </h2>
             <p class="f">Save your favourites easily and always have something to watch.</p>
@@ -279,14 +328,14 @@
     </div>
     <!-- Features section 3 start-->
     <section class="features sec3">
-        <div class="feature-3-text ft">
+        <div class="feature-text ft3">
             <h2>
                 Watch everywhere
             </h2>
             <p class="f">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
         </div>
-        <div class="feature-3-img fm">
-            <img src="assets/device-pile-in.png" alt="" id="tv">
+        <div class="feature-img fm3">
+            <img src="assets/device-pile-in.png" alt="" id="f3-img" class="fimg">
         </div>
 
     </section>
@@ -295,10 +344,10 @@
     </div>
     <!-- Features section 4 start-->
     <section class="features sec4">
-        <div class="feature-4-img fm">
-            <img src="assets/children.png" alt="" id="tv">
+        <div class="feature-img fm4">
+            <img src="assets/children.png" alt="" id="f4-img" class="fimg">
         </div>
-        <div class="feature-4-text ft">
+        <div class="feature-text ft4">
             <h2>
                 Create profiles for kids
             </h2>
